@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>About us</title>
+</head>
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:normal;
+}
+.navbar {
+    display: flex;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 90px;
+    background-color: white;
+}
+
+.brand {
+    font-weight: bold;
+    font-size: 30px;
+    color:rgb(5, 5, 69);
+    display: flex;
+    align-items: center;
+}
+
+.brand i {
+    margin-left: 5px;
+    padding-right: 10px;
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar ul li {
+    display: inline;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    padding: 10px 8px;
+    font-size: 20px;
+    margin-left: 5px;
+    border-radius: 10px;
+    background-color: rgba(6, 6, 57, 0.3);
+    color:rgb(5, 5, 69)
+}
+
+.navbar ul li a:hover {
+    background-color:rgb(233, 233, 238);
+    
+}
+
+.cont{
+    font-size: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    box-sizing: border-box;
+    height: 100vh;
+}
+.containers{
+    width:50%;
+    margin-left: 7%;
+    height: 85vh;
+    box-sizing: border-box;
+    border: 1px solid ;
+    border-radius: 1px;
+    position: relative;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background: linear-gradient(to bottom,rgb(5, 5, 69), rgba(71, 6, 54, 0));
+    
+
+}
+
+.containers1{
+    width: 100%;
+    height: 70vh;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 1px;
+    position: relative;
+    color: rgb(0, 0, 0);
+    
+}
+.containers2{
+    width: 100%;
+    height: 110vh;
+    box-sizing: border-box;
+    border: 1px solid rgb(255, 255, 255);
+    background: linear-gradient(to bottom, rgb(255, 255, 255), rgba(71, 6, 54, 0));
+
+}
+.intro{
+
+    height: 30%;
+    width: 40%;
+}
+
+
+.content{
+    padding:30px 10px;
+    padding: 30%;
+    width: 20%;
+    margin-left: 20%;
+    box-sizing: content-box;
+    border: 1px solid rgb(255, 255, 255);
+    margin-top: 20%;
+    color: white;
+    background-color: black;
+    background-image: url(https://assets.flatpyramid.com/wp-content/uploads/uploads/3d-models/images/city/architecture_133-3d-model-32618-202110.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.containers1 .heading, h2 , .parag ,.community{
+    margin-left: 20px;
+    margin-left: 20px;
+}
+.heading{
+    padding-top: 20px;
+    margin-top: 30px;
+    font-size: 20px;
+}
+.heading:hover{
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+.heading1{
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+h2{
+    border: 0.2px solid rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 100px;
+}
+.parag{
+    margin-left: 80px;
+    width: 50%;
+    font-size: 20px;
+}
+.community, .candi{
+   height: 40%;
+   width: 30%;
+   float: right;
+   margin-right:7%;
+}
+
+.candi:hover{
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.5);
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+
+}
+.community,.images:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.5);
+
+}
+footer {
+    margin-top: 110%;
+    background-color: rgb(28, 28, 59);
+    /* margin-top: 1100px; */
+    text-align: center;
+    font-size: 20px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    padding: 30px;
+    text-align: justify;
+}
+.social-links .change1{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+
+.change2{
+    font-size: 30px;
+    margin-bottom: 10px;
+    color: rgb(255, 255, 255);
+}
+.contact-info,
+.social-links {
+    flex: 1;
+}
+
+.contact-info h2,
+.social-links h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.social-links ul {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.social-links ul li {
+    margin-right: 10px; 
+}
+
+.social-links ul li:last-child {
+    margin-right: 0; 
+}
+
+.social-links ul li a {
+    color: hsl(0, 0%, 95%);
+    text-decoration: none;
+    transition: color 0.3s;
+    font-size: 20px; }
+
+.social-links ul li a:hover {
+    color: #b3aeae;
+}
+
+.social-links ul li::after {
+    content: "||"; 
+    margin-left: 10px;
+    color: #fdfcfc;
+}
+
+.social-icons {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.social-icons li {
+    display: inline-block;
+    margin-top: 30px;
+    margin-right: 10px; }
+
+.social-icons a {
+    color: #fcfcfc; 
+    text-decoration: none;
+}
+
+.social-icons a i {
+    color: #8a0000; 
+}
+
+.social-text {
+    margin-left: 10px; 
+}
+
+.copyright {
+    padding-top: 20px;
+    color: white;
+    padding-right: 60%;
+}
+
+
+</style>
+<body>
+    <div class="cont">
+        <nav class="navbar">
+            <div class="brand">
+                <img src="about/candi_logo.png" alt="" style="width: 6%; height:7%">Candiclie Constructions
+            </div>
+            <ul>
+                <li><a href="/index1.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/services.html">Our Services</a></li>
+                <li><a href="/gallery.html">Photo Gallery</a></li>
+                <li><a href="/login.html">Register/Login</a></li>
+            </ul>
+        </nav>
+        <p style="float: right;width:35%;margin-top:8%;color:rgb(5, 5, 69);text-align:justify;margin-right:6%;"><span style="font-size: 30px;text-align:center;padding-bottom:60px;">A <b>HOME</b> is a luxury.No matter the price. <br></span><b> <br>Candiclie Constructions</b> is a prominent real estate development company known for its commitment to crafting exceptional living spaces. Established with a visionary zeal in 2023 by Ravi Singh, the company has since evolved into a trusted name in the industry. With a focus on redefining the real estate landscape, Candiclie Constructions endeavors to create communities where individuals can thrive. Their portfolio boasts successful projects across major cities like Chennai, Coimbatore, Bangalore, Mumbai, Erode, Salem, Tuticorin, and beyond. Guided by values of integrity, innovation, and excellence, the company is dedicated to connecting people with their dream homes while fostering lasting value for generations to come. Through transparent practices and a customer-centric approach, Candiclie Constructions continues to set new standards of quality and reliability in the real estate sector.</p>
+        <div class="containers">
+            <p class="content" style="color: rgb(0, 0, 0);"></p>            <!-- <img src="about/intro.jpg" alt="image" class="intro"> -->
+        </div>
+        <br> 
+        <div class="containers1">
+            <hr>  
+            <h3 style="text-align: center;margin-top:5%;font-size:40px"><u>Missions and Values</u></h3>
+            <h2 class="heading" style="margin-left:7%;margin-top:6%;">Mission:</h2>
+            <img src="https://wallpapercave.com/wp/wp4110660.jpg" alt=""class="community">
+            <p class="parag"style="margin-left:10%;padding-top:10px;"> Our mission is to build communities where people can thrive, connecting individuals with their dream homes and creating lasting value for generations to come. <br></p>
+            <h2 class="heading" style="margin-left:7%;">Values:</h2> 
+            <p class="parag" style="margin-left:10%;padding-top:10px;">At Candiclie Constructions, we are guided by integrity, innovation, and a commitment to excellence in everything we do. We believe in transparency, accountability, and putting our customers first.</p>
+        </div>
+        <hr>
+        <div class="containers2">
+            <h1 style="padding-left: 20px;padding-bottom: 20px;margin-left:40px;text-align: center;margin-top:7%;"><u>History</u></h1>
+            <img src="logo.png" alt="" class="candi" style="margin-right:20px;margin-left:8%;width:20%;height:30%;float:left;">
+            <p class="parag" style="width:60%;padding-left:5%;padding-top:6%;float:right;">Candiclie Constructions was founded in <b>2023</b> by <b>Ravi Singh</b> with a vision to redefine the real estate landscape.Since then, we have grown into a trusted name in the industry, with a portfolio of successful projects across <b>Chennai,Coimbatore,Bangalore,Mumbai,Erode,Salem,Tuticorin etc...</b>.</p>
+            <hr>
+            <h1 class="heading1" style="padding-top: 20%;"><u>Contact Information</u></h1>
+            <address>
+                    <img src="https://thumbs.dreamstime.com/b/contact-us-mail-telephone-cubes-white-d-man-illustration-131851369.jpg" alt="" class="images" style="float:right;width:50%;height:40%;">
+                    <pre style="padding-top: 20px;padding-top:15%">
+                    For inquiries, please contact us at:
+                    <b>Email:</b> info@candiclieconstructions.com
+                    <b>Phone: </b>+1234567890
+                    <b>Address:</b> 4/123,Amman Kovil street,Kanpur,Uttar Pradesh
+                </pre>
+            </address>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="footer-container">
+            <div class="contact-info" style="color: rgb(255, 255, 255);">
+                <h6 style="font-size: 30px;color:rgb(198, 188, 188);" class="change1" ><b><i><u>Contact Us</u></i></b></h6>
+                <p style="padding-top: 30px;color:white">Get in Touch!We'd love to hear from you!</p>
+                <p class="email"><i>candiclieconstructions@gmail.com</i></p>
+                <p><i>+1234567890</i></p>
+                <p><i>Address: 123 Main Street, City, Country</i></p>
+            </div>
+            <div class="social-links">
+                <h6 style="font-size: 30px;color:rgb(198, 188, 188);" class="change2"><b><i><u>Follow Us</u></i></b></h6>
+                <ul class="social-icons">
+                    <li><a href="#"><i class="fab fa-facebook"></i><span class="social-text"> Facebook</span></a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i><span class="social-text"> Twitter</span></a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i><span class="social-text"> Instagram</span></a></li>
+                </ul>      
+                <p class="copyright">&copy; Any rights reserved</p>            </div>
+        </div>
+        
+    </footer>
+    
+</body>
+</html>

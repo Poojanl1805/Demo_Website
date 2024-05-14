@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        font-family: 'Times New Roman', Times, serif;
+        
+    }
+    .navbar {
+        display: flex;
+        border: 1px solid rgb(255, 255, 255);
+        border-radius: 2px;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 90px;
+        background-color: white;
+    }
+    
+    .brand {
+        font-weight: bold;
+        font-style: italic;
+        font-size: 30px;
+        color:rgb(5, 5, 69);
+        display: flex;
+        align-items: center;
+    }
+    
+    .brand i {
+        margin-left: 5px;
+        padding-right: 10px;
+    }
+    
+    .navbar ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar ul li {
+        display: inline;
+    }
+    
+    .navbar ul li a {
+        text-decoration: none;
+        padding: 10px 8px;
+        font-size: 20px;
+        margin-left: 5px;
+        border-radius: 10px;
+        background-color: rgba(6, 6, 57, 0.3);
+        color:rgb(5, 5, 69);
+    }
+    
+    .navbar ul li a:hover {
+        background-color:rgb(233, 233, 238);
+        
+    }
+    .cont1{
+        font-size: 20px;
+        
+    }
+
+    img:hover{
+        transform: scale(1.1);
+        transition: 0.3s ease-in-out;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .service {
+        width: 300px;
+        margin: 20px;
+    }
+    
+    .service img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    
+    .description {
+        background-color: #f0ecec;
+        padding: 20px;
+        border-radius: 5px;
+    }
+    
+    .description h2 {
+        margin-bottom: 10px;
+        font-size: 20px;
+    }
+    
+    .description p {
+        font-size: 16px;
+        color: #555;
+    }
+    footer {
+        margin-top: 10%;
+        background-color: rgb(28, 28, 59);
+        /* margin-top: 1100px; */
+        text-align: center;
+        font-size: 20px;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-around;
+        margin-left: 40px;
+        padding: 30px;
+        text-align: justify;
+    }
+    .social-links .change1{
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: rgb(255, 255, 255);
+    }
+    
+    .change2{
+        font-size: 30px;
+        margin-bottom: 10px;
+        color: rgb(255, 255, 255);
+    }
+    .contact-info,
+    .social-links {
+        flex: 1;
+    }
+    
+    .contact-info h2,
+    .social-links h2 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+    
+    .contact-info p {
+        margin: 5px 0;
+    }
+    
+    .social-links ul {
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+    }
+    
+    .social-links ul li {
+        margin-right: 10px; 
+    }
+    
+    .social-links ul li:last-child {
+        margin-right: 0; 
+    }
+    
+    .social-links ul li a {
+        color: hsl(0, 0%, 95%);
+        text-decoration: none;
+        transition: color 0.3s;
+        font-size: 20px; }
+    
+    .social-links ul li a:hover {
+        color: #b3aeae;
+    }
+    
+    .social-links ul li::after {
+        content: "||"; 
+        margin-left: 10px;
+        color: #fdfcfc;
+    }
+    
+    .social-icons {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .social-icons li {
+        display: inline-block;
+        margin-top: 30px;
+        margin-right: 10px; }
+    
+    .social-icons a {
+        color: #fcfcfc; 
+        text-decoration: none;
+    }
+    
+    .social-icons a i {
+        color: #8a0000; 
+    }
+    
+    .social-text {
+        margin-left: 10px; 
+    }
+    
+    .copyright {
+        padding-top: 20px;
+    color: white;
+    padding-right: 60%;
+    }
+
+</style>
+<body>
+    <div class="cont1">
+        <nav class="navbar">
+            <div class="brand">
+                <img src="about/candi_logo.png" alt="" style="width: 6%; height:7%">Candiclie Constructions
+            </div>
+            <ul>
+                <li><a href="/index1.html">Home</a></li>
+                <li><a href="/about.html">About Us</a></li>
+                <li><a href="/services.html">Our Services</a></li>
+                <li><a href="/gallery.html">Photo Gallery</a></li>
+                <li><a href="/login.html">Register/Login</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <div class="service">
+                <img src="https://images.unsplash.com/photo-1582883545851-725a3b9502ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Residential Construction">
+                <div class="description">
+                    <h2>Residential Construction</h2>
+                    <p>Design and construction of high-quality residential properties, including apartments, villas, and gated communities.</p>
+                </div>
+            </div>
+            
+            <div class="service">
+                <img src="https://media.istockphoto.com/id/1272606512/photo/directly-below-of-modern-financial-skyscrapers-in-kwun-tong-hong-kong.jpg?s=2048x2048&w=is&k=20&c=UvZrU0Xbd9OgS4t2c6cWLSbpM7DeXdZiqMXnFUfvdNQ=" alt="Commercial Projects">
+                <div class="description">
+                    <h2>Commercial Projects</h2>
+                    <p>Commercial projects entail the development of versatile spaces tailored to meet the diverse needs of businesses and organizations.</p>
+                </div>
+            </div>
+
+            <div class="service">
+                <img src="https://wallpaperaccess.com/full/421789.jpg" alt="Commercial Projects">
+                <div class="description">
+                    <h2>Architectural Design:</h2>
+                    <p>Architectural design is the creative process of conceiving and shaping the physical environment, encompassing the planning, designing, and execution of buildings.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://i.pinimg.com/originals/cf/a9/f8/cfa9f87173a0019b3eeeceede0684e6a.jpg">
+                <div class="description">
+                    <h2>Interior Design:</h2>
+                    <p>Interior design is the creative process of transforming interior spaces into functional, aesthetically pleasing environments.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://tse1.mm.bing.net/th?id=OIP.BU8t2dzQTehXwEvdYQ4kBAHaE1&pid=Api&P=0&h=180" alt="Residential Construction">
+                <div class="description">
+                    <h2>Residential Construction</h2>
+                    <p>Design and construction of high-quality residential properties, including apartments, villas, and gated communities.</p>
+                </div>
+            </div>
+            
+            <div class="service">
+                <img src="https://media.istockphoto.com/id/1427484238/photo/downtown-central-district-in-warsaw-office-building-at-summer-day.jpg?s=2048x2048&w=is&k=20&c=mmGu0m-wM3tRbM3yMPocCz_wqb6NBiL0S06i-1Sw4Uo=" alt="Commercial Projects">
+                <div class="description">
+                    <h2>Commercial Projects</h2>
+                    <p>Commercial projects entail the development of versatile spaces tailored to meet the diverse needs of businesses and organizations.</p>
+                </div>
+            </div>
+
+            <div class="service">
+                <img src="https://wallpaperaccess.com/full/4792059.jpg" alt="Commercial Projects">
+                <div class="description">
+                    <h2>Architectural Design:</h2>
+                    <p>Architectural design is the creative process of conceiving and shaping the physical environment, encompassing the planning, designing, and execution of buildings.</p>
+                </div>
+            </div>
+            <div class="service">
+                <img src="https://s-media-cache-ak0.pinimg.com/originals/8e/42/79/8e4279f6895b6a0c2dcd15af6ef8ea4a.jpg">
+                <div class="description">
+                    <h2>Interior Design:</h2>
+                    <p>Interior design is the creative process of transforming interior spaces into functional, aesthetically pleasing environments.</p>
+                </div>
+            </div>
+            
+          
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="contact-info" style="color: rgb(255, 255, 255);">
+                    <h6 style="font-size: 30px;color:rgb(198, 188, 188);" class="change1" ><b><i><u>Contact Us</u></i></b></h6>
+                    <p style="padding-top: 30px;color:white;">Get in Touch!We'd love to hear from you!</p>
+                    <p class="email"><i>candiclieconstructions@gmail.com</i></p>
+                    <p><i>+1234567890</i></p>
+                    <p><i>Address: 123 Main Street, City, Country</i></p>
+                </div>
+                <div class="social-links">
+                    <h6 style="font-size: 30px;color:rgb(198, 188, 188);" class="change2"><b><i><u>Follow Us</u></i></b></h6>
+                    <ul class="social-icons">
+                        <li><a href="#"><i class="fab fa-facebook"></i><span class="social-text"> Facebook</span></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i><span class="social-text"> Twitter</span></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i><span class="social-text"> Instagram</span></a></li>
+                    </ul>      
+                    <p class="copyright">&copy; Any rights reserved</p>            </div>
+            </div>
+            
+        </footer>
+</body>
+</html>

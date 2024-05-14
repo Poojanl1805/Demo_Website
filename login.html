@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consult Now</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            filter: grayscale(100%);
+            transition: filter 0.3s ease-in-out;
+            background-image: linear-gradient(rgba(4,9,30,0.5),rgba(4,9,30,0.5)),url(mode1.jpg);
+
+        }
+
+        body.active {
+            filter: grayscale(0%);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            cursor: pointer;
+        }
+        
+        .button-container {
+            position: absolute;
+            top: 20px; 
+            left: 20px;
+         }
+
+            
+        .form-container {
+            display: none; 
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 600px; 
+            background-color:white;
+            padding: 20px;
+            border-radius: 10px;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.5),rgba(0, 0, 0, 0.5));
+
+        }
+
+        
+
+        input[type="text"],
+        input[type="email"],
+        input[type="phone"],
+        textarea,
+        input[type="submit"],
+        input[type="checkbox"] {
+            width: calc(100% - 20px); 
+            padding: 10px;
+            margin-bottom: 0px;
+            border: 2px solid #ddd9d9;
+            border-radius: 80px;
+            background-color: whitesmoke;
+            
+        }
+
+        
+        input[type="text"],
+        input[type="email"],
+        input[type="phone"],
+        textarea {
+            margin-top: 5px;
+            margin-right: 10px; 
+        }
+       
+        
+        input[type="checkbox"] {
+            width: auto; 
+            margin-right: 10px; 
+            transform: scale(1.5);
+            box-shadow: 0 0 3px 3px rgba(111, 177, 224, 0.3);
+        }
+
+        input[type="submit"] {
+            background-color: #0E011B;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            width: 100%}
+
+        input[type="submit"]:hover {
+            background-color:#0f4bc5;
+        }
+        
+
+
+        .form-container.active {
+            display: block; 
+        }
+
+        #loginForm {
+            display: none;
+        }
+
+        #loginForm:target {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="button-container">
+    <button class="main-button" onclick="showConsultForm()">Click here to register</button>
+</div>
+
+<div class="form-container" id="consult-form">
+    <button class="close-btn" onclick="closeConsultForm()" >x</button>
+    <form action="/consult_now" method="post">
+        <h3>Fill the details</h3>
+        <hr><br>
+        <label for="firstname">First Name:</label><br>
+        <input type="text" id="firstname" name="firstname" required><br><br>
+
+        <label for="lastname">Last Name:</label><br>
+        <input type="text" id="lastname" name="lastname" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Mobile Number:</label><br>
+        <input type="phone" id="phone" name="phone" pattern="[0-9]{10}" required>
+        <br><br>
+        <input type="checkbox" id="myCheckbox" name="myCheckbox" required>
+        <label for="myCheckbox" style="text-decoration: underline;color:rgb(11, 94, 218);">I agree to the terms and conditions</label>
+
+        <br><br>
+        <input type="submit" value="Submit" style="margin-top: 10px; text-align:center">
+    </form>
+</div>
+
+<script>
+    function showConsultForm() {
+        var consultForm = document.getElementById("consult-form");
+        consultForm.classList.add("active");
+        document.body.classList.add("active");
+    }
+    function closeConsultForm() {
+        var consultForm = document.getElementById("consult-form");
+        consultForm.classList.remove("active");
+        document.body.classList.remove("active");
+    }
+
+</script>
+
+</body>
+</html>
